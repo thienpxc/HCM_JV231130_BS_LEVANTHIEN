@@ -37,6 +37,7 @@ public class BookManagement {
                 case 5:
                     searchBookByKeyword(scanner);
                 case 6:
+//                    updateStaff(scanner);
                 case 7:
                     return;
                 default:
@@ -54,22 +55,19 @@ public class BookManagement {
 //        System.out.println("danh sach nhan vien hien tai la: \n");
 //        byte manageLegnth = (byte) booksArr.length;
 //        for (int i = 0; i < manageLegnth; i++) {
-//            System.out.println(booksArr[i].toString());
+//            booksArr[i].displayData();
 //        }
 //        //cap nhat thong tin
-//        System.out.println("chọn vị trí cần cập nhật thông tin");
-//        byte arrayLocation = Byte.parseByte(scanner.nextLine());
-//        Book indexNeedUpDate =
-//        Book bookss = new Book();
-//        bookss.inputData(scanner);
-//        newArrBook[i] = bookss;
+//        System.out.println("Chọn vị trí cần cập nhật thông tin:");
+//        String arrayLocation = scanner.nextLine(); // Nhập mã sách dưới dạng chuỗi
 //
-//        for (int i = 0; i < manageLegnth; i++) {
-//            if (i == arrayLocation) {
-//                managesArr[i] = indexNeedUpDate;
-//                return;
+//        for (int i = 0; i < booksArr.length; i++) {
+//            if (booksArr[i].getBookId().equals(arrayLocation)) { // So sánh mã sách với mã nhập vào
+//                indexToUpdate = i; // Lưu chỉ số của sách cần cập nhật
+//                break;
 //            }
 //        }
+//
 //    }
     //tim kiem ten or mo ta
     public static void searchBookByKeyword(Scanner scanner) {
